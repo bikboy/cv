@@ -1,0 +1,53 @@
+#avatar {
+	position: absolute;
+    top: 1%;
+    right: 1%;
+   }
+img#photo {
+	width: 100px;
+	height: auto;
+}
+body {
+   margin: 20px;
+}
+#skills {
+	display: flex;
+	margin: 20px;	
+}
+#clouds{
+	margin: 20px;
+}
+#iaac {
+	margin: 20px;
+}
+#cicd {
+	margin: 20px;
+}
+#build {
+	margin: 20px;
+}
+
+#scripting {
+	margin: 20px;
+}
+#telemetry {
+	margin: 20px;
+}
+#db {
+	margin: 20px;
+}
+#os {
+	margin: 20px;
+}
+#java {
+	margin: 20px;
+}
+
+#summary {
+	
+	position: relative;
+}
+#experience {
+	
+	position: relative;
+}
