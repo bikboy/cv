@@ -12,6 +12,7 @@ jobs:
         with:
           image: timber/cv
           tags: latest
+          registry: hub.docker.com
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
