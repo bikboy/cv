@@ -1,4 +1,5 @@
 name: Build and publish docker image
+on: [push]
 jobs:
   push_to_registry:
     name: Build and Push Docker image to Docker Hub
