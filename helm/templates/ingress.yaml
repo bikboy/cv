@@ -2,8 +2,8 @@
 {{- $fullName := include "helm.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
 {{- $name := include "helm.name" . -}}
-{{- $servicePortName := .Values.service.name -}}
-apiVersion: extensions/v1beta1
+{{- $servicePortName := .Values.service.port -}}
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
@@ -33,8 +33,11 @@ spec:
       http:
         paths:
           - path: {{ $ingressPath }}
+            pathType: Prefix
             backend:
-              serviceName: {{ $name }}
-              servicePort: {{ $servicePortName }}
+              service:
+                name: {{ $name }}
+                port:
+                  number: {{ $servicePortName }}
   {{- end }}
 {{- end }}
