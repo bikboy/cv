@@ -12,7 +12,7 @@ body {
 }
 #skills {
 	display: flex;
-	margin: 20px;	
+	clear: left;	
 }
 #clouds{
 	margin: 20px;
