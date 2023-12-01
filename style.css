@@ -12,38 +12,38 @@ body {
 }
 #skills {
 	display: flex;
-	clear: left;	
 }
 #clouds{
-	margin: 20px;
+	margin-top: 30px;
+	margin-left: -60px;
 }
 #kubernetes {
-	margin: 20px;
+	margin: 30px;
 }
 #iaac {
-	margin: 20px;
+	margin: 30px;
 }
 #cicd {
-	margin: 20px;
+	margin: 30px;
 }
 #build {
-	margin: 20px;
+	margin: 30px;
 }
 
 #scripting {
-	margin: 20px;
+	margin: 30px;
 }
 #telemetry {
 	margin: 20px;
 }
 #db {
-	margin: 20px;
+	margin: 30px;
 }
 #os {
-	margin: 20px;
+	margin: 30px;
 }
 #java {
-	margin: 20px;
+	margin: 30px;
 }
 
 #summary {
