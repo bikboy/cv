@@ -1,214 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Tim Bikbaev CV</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id=avatar>
-		<img src="img/avatar.jpg" alt="Tim Bikbaev" id=photo>
-    </div>
-    <header id="header" class="">
-    	<h1>Timur Bikbaev</h1>		
-		<h2>DevOps Engineer</h2>
-		<p>Contacts</p>
-		<ul>
-			<li>mail: t.bikbaev@gmail.com </li>
-			<li>skype: tim.bikbaev </li>
-			<li>phone: +380671014882</li>
-			<li>telegram: @t_bikbaev</li>
-		</ul>
-		<div id="skills">
-			<h2>Skills:</h2>
-			<div id="clouds">
-				<h3>	Clouds</h3>
-				<ul>
-					<li>AWS</li>
-					<li>GCP</li>
-					<li>Azure</li>
-				</ul>
-			</div>
-			<div id="kubernetes">
-				<h3>Kubernetes</h3>
-				<ul>
-					<li>services(all) and self-hosted</li>
-					<li>helm</li>
-					<li>istio</li>
-					<li>prometheus</li>
-					<li>CRD</li>
-				</ul>
-			</div>
-			<div id="iaac">
-				<h3>IaaC</h3>
-				<ul>
-					<li>pulumi</li>
-					<li>terraform</li>
-					<li>vendor specific:
-						<ul>
-							<li> CloudFormation</li>
-							<li> ARM</li>
-						</ul>
-					</li>
-			</div>
-			<div id="cicd">
-				<h3>CI</h3>
-				<ul>
-					<li>VCS:
-						<ul>
-							<li>git</li>
-							<li>mercury</li>
-						</ul>
-					</li>
-					<li>azure devops</li>
-					<li>gitlabCI</li>
-					<li>jenkins</li>
-					<li>circleCI</li>
-					<li>concourse</li>
-					<li>drone.io</li>
-				</ul>
-			</div>
-			<div id="scripting">
-				<h3>Scripting</h3>
-				<ul>
-					<li>rust</li>
-					<li>python</li>
-					<li>powershell</li>
-					<li>bash</li>
-					<li>JS</li>
-				</ul>
-			</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Bikbaev - DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="avatar">
+        <img src="img/avatar.jpg" alt="Tim Bikbaev">
+      </div>
+      <h1>Timur Bikbaev</h1>
+      <h2>DevOps Engineer</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📧</span>
+          <span id="email-display">{{ email }}</span>
+        </div>
+        <div class="contact-item">
+          <span>📱</span>
+          <span>+380671014882</span>
+        </div>
+        <div class="contact-item">
+          <span>✈️</span>
+          <span>@t_bikbaev</span>
+        </div>
+      </div>
+    </header>
 
-			<div id="telemetry">
-				<h3>Telemetry</h3>
-				<ul>
-					<li>prometheus</li>
-					<li>Newrelic</li>
-					<li>Cloudwatch + serverless</li>
-					<li>ELK</li>
-				</ul>
-			</div>
-			<div id="db">
-				<h3>DB related</h3>
-				<ul>
-					<li>sql</li>
-					<ul>
-						<li>mysql</li>
-						<li>postgres</li>
-						<li>mssql</li>
-						<li>Oracle BI</li>
-					</ul>
-					<li>nosql</li>
-					<ul>
-						<li>elasticsearch</li>
-						<li>MongoDB</li>
-						<li>clickhouse</li>
-					</ul>
-				</ul>
-			</div>
-			<div id="ai-ml">
-				<h3>AI/ML</h3>
-				<ul>
-					<li>Machine Learning</li>
-					<li>Large Language Models (LLMs)</li>
-					<li>Natural Language Processing</li>
-					<li>AI Model Deployment</li>
-					<li>TensorFlow</li>
-					<li>PyTorch</li>
-				</ul>
-			</div>
-		</div>
-		<div id="summary">
-			<h2>Summary</h2>
-			<ul>
-				<li>Result-oriented and self-motivated IT professional with deep technical background and 15+ years of experience in administering Linux/Windows based environments.</li> 
-				<li>Proficient in installation and configuring various http/https services with load-balancing and high-availability features</li>
-				<li>Great experience in network development and maintaining in high load infrastructure</li>
-				<li>Strong knowledge in VoIP, participation in big VoIP projects as developer/L3 support</li>
-				<li>Extensive experience of Business Intelligence concepts and tools and designing, coding, testing and supporting next-generation database solutions in Oracle enterprise and SQL Server environments</li>
-				<li>Proven record of success in diagnosis of web-application faults, root cause analysis, issues investigating and troubleshooting.</li>
-				<li>Hands-on experience in day-to-day maintenance of enterprise-level systems, including Private Cloud environments.</li>
-				<li>Comfortable with working as a member of a team and performing own tasks as single person responsible for the entire system health/monitoring.</li>
-				<li>Expert in choosing, efficient usage and tuning of various monitoring tools (Nagios, Zabbix, prometheus etc.)</li>
-				<li>High-skilled DevOps engineer with key expertise in development and support of high load infrastructure and high performance client and server side web-applications.</li>
-				<li>Decent technical background, 8+ years of experience in support and maintenance of enterprise-level systems, including performance optimization, debugging and profiling.</li>
-				<li>Experience in managing and leading L2 support team up to 3 team members.</li>
-				<li>Believer and follower of the best practices in Continuous Integration and Continuous Delivery.</li>
-				<li>Experience in development/adjustment of software development life cycle for DevOps engineering teams.</li>
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Clouds</h3>
+          <ul>
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Kubernetes</h3>
+          <ul>
+            <li>Services (all) and self-hosted</li>
+            <li>Helm</li>
+            <li>Istio</li>
+            <li>Prometheus</li>
+            <li>CRD</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>IaaC</h3>
+          <ul>
+            <li>Pulumi</li>
+            <li>Terraform</li>
+            <li>Vendor specific:
+              <ul>
+                <li>CloudFormation</li>
+                <li>ARM</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>CI/CD</h3>
+          <ul>
+            <li>VCS:
+              <ul>
+                <li>Git</li>
+                <li>Mercury</li>
+              </ul>
+            </li>
+            <li>Azure DevOps</li>
+            <li>GitlabCI</li>
+            <li>Jenkins</li>
+            <li>CircleCI</li>
+            <li>Concourse</li>
+            <li>Drone.io</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Scripting</h3>
+          <ul>
+            <li>Rust</li>
+            <li>Python</li>
+            <li>PowerShell</li>
+            <li>Bash</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Telemetry</h3>
+          <ul>
+            <li>Prometheus</li>
+            <li>Newrelic</li>
+            <li>Cloudwatch + serverless</li>
+            <li>ELK</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>DB Related</h3>
+          <ul>
+            <li>SQL:
+              <ul>
+                <li>MySQL</li>
+                <li>Postgres</li>
+                <li>MSSQL</li>
+                <li>Oracle BI</li>
+              </ul>
+            </li>
+            <li>NoSQL:
+              <ul>
+                <li>Elasticsearch</li>
+                <li>MongoDB</li>
+                <li>Clickhouse</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>AI/ML</h3>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Large Language Models (LLMs)</li>
+            <li>Natural Language Processing</li>
+            <li>AI Model Deployment</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-			</ul>
-			
-		</div>
-		<div id="experience">
-			<h2>Work Experience</h2>
-			<h3>Dec-2017 – present day</h3>	
-			<h3>Devops Engineer, Slate</h3>
-			<p>Project: mobile app for gas stations</p>
-			<p>Role: Devops engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS</li>
-				<li>GCP</li>
-				<li>kubernetes</li>
-				<li>CI/CD (gitlab CI)</li>
-				<li>Processes automation</li>
-				<li>Container orchestration(rancher)</li>
-				<li>Monitoring</li>
-			</ul>
-			
-			Environment: AWS,rancher,JS,mongo,postgres,keycloak
-			
-			<h3>Dec-2016 – Dev-2017</h3>	
-			<h3>Devops Engineer, Ciklum</h3>
-			<p>Project: mobile social network</p>
-			<p>Role: Devops engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS</li>
-				<li>GCP</li>
-				<li>kubernetes</li>
-				<li>CI/CD (github+Jenkins)</li>
-				<li>Processes automation</li>
-				<li>New software implementation</li>
-				<li>Monitoring</li>
-			</ul>
-			
-			Environment: AWS,nginx,php,mysql
-			<h3>Dec-2015 – Dec-2016</h3>	
-			<h3>Devops Engineer, EPAM</h3>
-			<p>Project: part of INFRA team</p>
-			<p>Role: Devops engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>Deployments</li>
-				<li>Processes automation</li>
-				<li>New software implementation</li>
-				<li>Monitoring</li>
-			</ul>
-			
-			Environment: JavaEE,weblogic,tomcat,RHEL
-			<h3>Aug-2011 – Dec-2015	
-			Devops Engineer/L3 Tech support/Developer, JSC Platinum Bank</h3>
-			<p>Project: Development and implementation of network, VoIP, DWH, BI, CRM infrastructure</p>
-			<p>Role: Devops engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>Performed technical audit and provided consultancy to project team as of system health monitoring and application performance solutions implemented</li>
-				<li>Analyzed and improved backup and restore processes</li>
-				<li>Supporting of network, VoIP, DWH, BI, CRM infrastructure</li>
-				<li>New telephony services development for operation department</li>
-				<li>Maintance of existing DWH\BI infrastructure,development of new BI objects</li>
-				<li>Support of external banking web application(Barracuda equipment)</li>
-			</ul>
-			Environment: Asterisk, various Cisco equipment, Oracle BI, Oracle Siebel, Microsoft SSRS/SSIS/SSAS/DB, Mediatel, LAMP,Cisco UCM,Cisco CME
-		</div>
-		<div id="education">
-			<h2>Education</h2>
-			<h3>2000-2006 NTUU "KPI"</h3>
-			<h3>IT faculty, diploma : "system analyst"</h3>
-		</div>
+    <section class="section" id="summary">
+      <h2 class="section-title">Summary</h2>
+      <ul class="summary-list">
+        <li>Result-oriented and self-motivated IT professional with deep technical background and 15+ years of experience in administering Linux/Windows based environments.</li>
+        <li>Proficient in installation and configuring various http/https services with load-balancing and high-availability features</li>
+        <li>Great experience in network development and maintaining in high load infrastructure</li>
+        <li>Strong knowledge in VoIP, participation in big VoIP projects as developer/L3 support</li>
+        <li>Extensive experience of Business Intelligence concepts and tools and designing, coding, testing and supporting next-generation database solutions in Oracle enterprise and SQL Server environments</li>
+        <li>Proven record of success in diagnosis of web-application faults, root cause analysis, issues investigating and troubleshooting.</li>
+        <li>Hands-on experience in day-to-day maintenance of enterprise-level systems, including Private Cloud environments.</li>
+        <li>Comfortable with working as a member of a team and performing own tasks as single person responsible for the entire system health/monitoring.</li>
+        <li>Expert in choosing, efficient usage and tuning of various monitoring tools (Nagios, Zabbix, prometheus etc.)</li>
+        <li>High-skilled DevOps engineer with key expertise in development and support of high load infrastructure and high performance client and server side web-applications.</li>
+        <li>Decent technical background, 8+ years of experience in support and maintenance of enterprise-level systems, including performance optimization, debugging and profiling.</li>
+        <li>Experience in managing and leading L2 support team up to 3 team members.</li>
+        <li>Believer and follower of the best practices in Continuous Integration and Continuous Delivery.</li>
+        <li>Experience in development/adjustment of software development life cycle for DevOps engineering teams.</li>
+      </ul>
+    </section>
 
-    </header><!-- /header -->
-  </body>
+    <section class="section" id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-item">
+        <h3>Dec-2017 – Present Day</h3>
+        <h4>DevOps Engineer, Slate</h4>
+        <p>Project: Mobile app for gas stations</p>
+        <p>Role: DevOps Engineer</p>
+        <p>Participation:</p>
+        <ul>
+          <li>AWS</li>
+          <li>GCP</li>
+          <li>Kubernetes</li>
+          <li>CI/CD (Gitlab CI)</li>
+          <li>Processes automation</li>
+          <li>Container orchestration (Rancher)</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> AWS, Rancher, JS, Mongo, Postgres, Keycloak</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Dec-2016 – Dec-2017</h3>
+        <h4>DevOps Engineer, Ciklum</h4>
+        <p>Project: Mobile social network</p>
+        <p>Role: DevOps Engineer</p>
+        <p>Participation:</p>
+        <ul>
+          <li>AWS</li>
+          <li>GCP</li>
+          <li>Kubernetes</li>
+          <li>CI/CD (GitHub + Jenkins)</li>
+          <li>Processes automation</li>
+          <li>New software implementation</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> AWS, Nginx, PHP, MySQL</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Dec-2015 – Dec-2016</h3>
+        <h4>DevOps Engineer, EPAM</h4>
+        <p>Project: Part of INFRA team</p>
+        <p>Role: DevOps Engineer</p>
+        <p>Participation:</p>
+        <ul>
+          <li>Deployments</li>
+          <li>Processes automation</li>
+          <li>New software implementation</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> JavaEE, WebLogic, Tomcat, RHEL</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Aug-2011 – Dec-2015</h3>
+        <h4>DevOps Engineer/L3 Tech Support/Developer, JSC Platinum Bank</h4>
+        <p>Project: Development and implementation of network, VoIP, DWH, BI, CRM infrastructure</p>
+        <p>Role: DevOps Engineer</p>
+        <p>Participation:</p>
+        <ul>
+          <li>Performed technical audit and provided consultancy to project team as of system health monitoring and application performance solutions implemented</li>
+          <li>Analyzed and improved backup and restore processes</li>
+          <li>Supporting of network, VoIP, DWH, BI, CRM infrastructure</li>
+          <li>New telephony services development for operation department</li>
+          <li>Maintenance of existing DWH/BI infrastructure, development of new BI objects</li>
+          <li>Support of external banking web application (Barracuda equipment)</li>
+        </ul>
+        <p><strong>Environment:</strong> Asterisk, various Cisco equipment, Oracle BI, Oracle Siebel, Microsoft SSRS/SSIS/SSAS/DB, Mediatel, LAMP, Cisco UCM, Cisco CME</p>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>2000-2006 NTUU "KPI"</h3>
+        <p>IT Faculty, Diploma: "System Analyst"</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Initialize Vue.js for email display
+    new Vue({
+      el: '#email-display',
+      data: {
+        email: 't.bikbaev@gmail.com'
+      }
+    });
+  </script>
+</body>
 </html>
