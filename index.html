@@ -1,39 +1,33 @@
-
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Tim Bikbaev CV</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <div id=avatar>
 		<img src="img/avatar.jpg" alt="Tim Bikbaev" id=photo>
     </div>
-		<header id="header" class="">
-			<h1>Timur Bikbaev</h1>		
-			<h2>DevOps/SRE/Cloud Engineer</h2>
-		</header>
-		<div id="contacts">
-			<p>Contacts</p>
-			<ul>
-				<li>mail: t.bikbaev@gmail.com</li>
-				<li>phone/whatsup: +351939537340</li>
-				<li>telegram: @t_bikbaev</li>
-			</ul>
-		</div>
+    <header id="header" class="">
+    	<h1>Timur Bikbaev</h1>		
+		<h2>DevOps Engineer</h2>
+		<p>Contacts</p>
+		<ul>
+			<li>mail: t.bikbaev@gmail.com </li>
+			<li>skype: tim.bikbaev </li>
+			<li>phone: +380671014882</li>
+			<li>telegram: @t_bikbaev</li>
+		</ul>
 		<div id="skills">
 			<h2>Skills:</h2>
 			<div id="clouds">
-				<h3>Clouds</h3>
+				<h3>	Clouds</h3>
 				<ul>
 					<li>AWS</li>
 					<li>GCP</li>
 					<li>Azure</li>
-					<li>DigitalOcean</li>
-					<li>AlibabaCloud</li>
 				</ul>
 			</div>
 			<div id="kubernetes">
@@ -42,48 +36,37 @@
 					<li>services(all) and self-hosted</li>
 					<li>helm</li>
 					<li>istio</li>
-					<li>prometheus/loki/grafana</li>
-					<li>ArgoCD</li>
-					<li>FluxCD</li>
+					<li>prometheus</li>
+					<li>CRD</li>
 				</ul>
 			</div>
-			<div id="db">
-				<h3>SQL/NoSQL/DataFlow</h3>
+			<div id="iaac">
+				<h3>IaaC</h3>
 				<ul>
-					<li>sql</li>
-					<ul>
-						<li>postgres</li>
-						<li>mssql</li>
-						<li>Oracle BI</li>
-					</ul>
-					<li>nosql</li>
-					<ul>
-						<li>elasticsearch</li>
-						<li>MongoDB</li>
-						<li>clickhouse</li>
-					</ul>
-					<li>data flow</li>
-					<ul>
-						<li>apache airflow</li>
-						<li>apache kafka</li>
-						<li>AWS Athena</li>
-						<li>AWS Kinesis</li>
-						<li>AWS Glue</li>
-						<li>AWS EMR</li>
-						<li>AWS RedShift</li>
-					</ul>
-				</ul>
+					<li>pulumi</li>
+					<li>terraform</li>
+					<li>vendor specific:
+						<ul>
+							<li> CloudFormation</li>
+							<li> ARM</li>
+						</ul>
+					</li>
 			</div>
 			<div id="cicd">
 				<h3>CI</h3>
 				<ul>
+					<li>VCS:
+						<ul>
+							<li>git</li>
+							<li>mercury</li>
+						</ul>
+					</li>
 					<li>azure devops</li>
 					<li>gitlabCI</li>
 					<li>jenkins</li>
 					<li>circleCI</li>
 					<li>concourse</li>
 					<li>drone.io</li>
-					<li>Harness</li>
 				</ul>
 			</div>
 			<div id="scripting">
@@ -96,27 +79,43 @@
 					<li>JS</li>
 				</ul>
 			</div>
-			<div id="iaac">
-				<h3>IaaC</h3>
-				<ul>
-					<li>terraform</li>
-					<li>vendor specific:
-						<ul>
-							<li> CloudFormation</li>
-							<li> ARM</li>
-						</ul>
-					</li>
-					<li>pulumi</li>
-			</div>
+
 			<div id="telemetry">
-				<h3>Monitoring</h3>
+				<h3>Telemetry</h3>
 				<ul>
 					<li>prometheus</li>
-					<li>loki</li>
-					<li>grafana</li>
 					<li>Newrelic</li>
 					<li>Cloudwatch + serverless</li>
 					<li>ELK</li>
+				</ul>
+			</div>
+			<div id="db">
+				<h3>DB related</h3>
+				<ul>
+					<li>sql</li>
+					<ul>
+						<li>mysql</li>
+						<li>postgres</li>
+						<li>mssql</li>
+						<li>Oracle BI</li>
+					</ul>
+					<li>nosql</li>
+					<ul>
+						<li>elasticsearch</li>
+						<li>MongoDB</li>
+						<li>clickhouse</li>
+					</ul>
+				</ul>
+			</div>
+			<div id="ai-ml">
+				<h3>AI/ML</h3>
+				<ul>
+					<li>Machine Learning</li>
+					<li>Large Language Models (LLMs)</li>
+					<li>Natural Language Processing</li>
+					<li>AI Model Deployment</li>
+					<li>TensorFlow</li>
+					<li>PyTorch</li>
 				</ul>
 			</div>
 		</div>
@@ -143,33 +142,14 @@
 		</div>
 		<div id="experience">
 			<h2>Work Experience</h2>
-			<h3>Oct-2019 - present day</h3>
-			<h3>Devops Engineer, Globallogic</h3>
-			<p>Project: application for microscope</p>
-			<p>Role: Devops engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS (infrastructure from scratch)</li>
-				<li>microservices development and deployment</li>
-				<li>Azure</li>
-				<li>GCP (infrastructure from scratch)</li>
-				<li>kubernetes, helm</li>
-				<li>BigData: athena + apache airflow</li>
-				<li>CI/CD (Azure devops)</li>
-				<li>Processes automation</li>
-				<li>infrastructure as a code (terraform).Infrastructure created from scratch in Azure, GCP and on-prem using terraform with terragrunt</li>
-				<li>terragrunt to create new environments</li>
-				<li>Monitoring</li>
-			</ul>
-			<h3>Dec-2017 – Oct-2019</h3>	
+			<h3>Dec-2017 – present day</h3>	
 			<h3>Devops Engineer, Slate</h3>
 			<p>Project: mobile app for gas stations</p>
 			<p>Role: Devops engineer</p>
 			<p>Participation:</p>
 			<ul>
 				<li>AWS</li>
-				<li>GCP ( infrastructure from scratch)</li>
-				<li>Infrastructure created from scratch in GCP and AWS using terraform with terragrunt</li>
+				<li>GCP</li>
 				<li>kubernetes</li>
 				<li>CI/CD (gitlab CI)</li>
 				<li>Processes automation</li>
@@ -186,7 +166,7 @@
 			<p>Participation:</p>
 			<ul>
 				<li>AWS</li>
-				<li>GCP ( infrastructure from scratch)</li>
+				<li>GCP</li>
 				<li>kubernetes</li>
 				<li>CI/CD (github+Jenkins)</li>
 				<li>Processes automation</li>
@@ -197,7 +177,7 @@
 			Environment: AWS,nginx,php,mysql
 			<h3>Dec-2015 – Dec-2016</h3>	
 			<h3>Devops Engineer, EPAM</h3>
-			<p>Project: part of INFRA team in logistic-oriented project(trucks-storage management)</p>
+			<p>Project: part of INFRA team</p>
 			<p>Role: Devops engineer</p>
 			<p>Participation:</p>
 			<ul>
@@ -229,6 +209,6 @@
 			<h3>IT faculty, diploma : "system analyst"</h3>
 		</div>
 
-    <!-- /header -->
+    </header><!-- /header -->
   </body>
 </html>
