@@ -1,53 +1,113 @@
+/* Screen styles (lightweight, 2019-era) */
 #avatar {
 	position: absolute;
-    top: 1%;
-    right: 1%;
-   }
+	top: 1%;
+	right: 1%;
+}
 img#photo {
 	width: 100px;
 	height: auto;
 }
 body {
-   margin: 20px;
+	margin: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: #222;
+	max-width: 1000px;
 }
 #skills {
 	display: block;
-	margin: 20px;	
+	margin: 20px 0;
 }
-#clouds{
-	margin: 20px;
+#clouds, #iaac, #cicd, #scripting, #telemetry, #db, #java, #ai-ml {
+	margin: 10px 0;
 }
-#iaac {
-	margin: 20px;
-}
-#cicd {
-	margin: 20px;
-}
-#build {
-	margin: 20px;
+#summary, #experience, #education {
+	position: relative;
+	margin: 20px 0;
 }
 
-#scripting {
-	margin: 20px;
+/* Screen-only print button (hidden when printing) */
+.print-button {
+	display: inline-block;
+	margin: 12px 0;
+	padding: 10px 18px;
+	background: #2c3e50;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: inherit;
 }
-#telemetry {
-	margin: 20px;
-}
-#db {
-	margin: 20px;
-}
-#os {
-	margin: 20px;
-}
-#java {
-	margin: 20px;
+.print-button:hover { background: #34495e; }
+
+/* ---------- Print-specific styles ---------- */
+@media print {
+	@page {
+		size: A4;
+		margin: 12mm;
+	}
+	body {
+		margin: 0;
+		font-size: 10pt;
+		line-height: 1.35;
+		color: #000;
+		max-width: 100%;
+	}
+	h1 { font-size: 18pt; margin: 0 0 4pt; }
+	h2 {
+		font-size: 12pt;
+		margin: 10pt 0 4pt;
+		border-bottom: 1pt solid #000;
+		padding-bottom: 2pt;
+		page-break-after: avoid;
+	}
+	h3 {
+		font-size: 10.5pt;
+		margin: 6pt 0 2pt;
+		page-break-after: avoid;
+	}
+	p { margin: 2pt 0; }
+	ul {
+		margin: 2pt 0 4pt 16pt;
+		padding: 0;
+	}
+	li { margin: 1pt 0; }
+
+	/* Hide screen-only chrome */
+	.print-button { display: none; }
+	#avatar { display: none; }
+
+	/* Skills section: 2-column layout for compact print */
+	#skills {
+		column-count: 2;
+		column-gap: 8mm;
+		column-rule: 0;
+		margin: 6pt 0;
+	}
+	#clouds, #iaac, #cicd, #scripting, #telemetry, #db, #java, #ai-ml {
+		break-inside: avoid;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		margin: 0 0 6pt;
+	}
+
+	/* Section anchors: keep together as much as possible */
+	#summary, #experience, #education {
+		page-break-inside: auto;
+		margin: 8pt 0;
+	}
+	#summary li, #experience > h3, #experience > p {
+		page-break-inside: avoid;
+	}
+
+	/* Headers: avoid orphaned headings */
+	#summary h2, #experience h2, #education h2 {
+		page-break-after: avoid;
+	}
 }
 
-#summary {
-	
-	position: relative;
-}
-#experience {
-	
-	position: relative;
+/* Also apply print layout on narrow screens (so live preview matches) */
+@media (max-width: 720px) {
+	#skills { column-count: 1; }
 }
