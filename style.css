@@ -198,6 +198,13 @@ body {
   margin-bottom: 5px;
 }
 
+.period {
+  color: #7f8c8d;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 400 !important;
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 30px 20px;
