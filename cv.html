@@ -1,202 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Tim Bikbaev CV</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id=avatar>
-		<img src="img/avatar.jpg" alt="Tim Bikbaev" id=photo>
-    </div>
-    <header id="header" class="">
-    	<h1>Timur Bikbaev</h1>		
-		<h2>AI Platform / LLMOps Engineer</h2>
-		<p>Contacts</p>
-		<ul>
-			<li>mail: t.bikbaev@gmail.com</li>
-			<li>phone: +421944136228</li>
-			<li>telegram: @t_bikbaev</li>
-			<li>Bratislava, Slovakia</li>
-		</ul>
-		<div id="skills">
-			<div id="ai">
-				<h3>AI / LLMOps</h3>
-				<ul>
-					<li>LLM serving: vLLM, llama.cpp, SGLang, Ollama</li>
-					<li>RAG: embeddings, vector DBs (Qdrant, pgvector), reranking, evaluation</li>
-					<li>AI agents: tool-calling runtimes, multi-agent orchestration</li>
-					<li>Model quality: evals (GSM8K-style benchmarks), observability, cost control</li>
-					<li>GPU infrastructure: scheduling, inference optimization, quantization</li>
-					<li>AI agents built &amp; run in production:
-						<ul>
-							<li>OpenClaw — always-on personal AI agent (Telegram, SMS, voice/IVR, local LLM, hardware)</li>
-							<li>Hermes — multi-platform AI agent (scheduled reasoning, multi-source synthesis)</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div id="clouds">
-				<h3>Clouds</h3>
-				<ul>
-					<li>AWS</li>
-					<li>GCP</li>
-					<li>Azure</li>
-					<li>on-prem GPU rigs</li>
-				</ul>
-			</div>
-			<div id="iaac">
-				<h3>IaaC / Containers</h3>
-				<ul>
-					<li>kubernetes, helm, istio</li>
-					<li>terraform, terragrunt, pulumi</li>
-					<li>docker, rancher</li>
-					<li>CloudFormation, ARM</li>
-				</ul>
-			</div>
-			<div id="cicd">
-				<h3>CI/CD</h3>
-				<ul>
-					<li>gitlabCI, github actions</li>
-					<li>jenkins, azure devops</li>
-					<li>circleCI, concourse, drone.io</li>
-				</ul>
-			</div>
-			<div id="scripting">
-				<h3>Scripting</h3>
-				<ul>
-					<li>python</li>
-					<li>rust</li>
-					<li>bash</li>
-					<li>powershell</li>
-					<li>JS</li>
-				</ul>
-			</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Bikbaev CV — AI Platform / LLMOps Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="avatar">
+        <img src="img/avatar.jpg" alt="Tim Bikbaev">
+      </div>
+      <h1>Timur Bikbaev</h1>
+      <h2>AI Platform / LLMOps Engineer</h2>
+      <div class="contact-info">
+        <div class="contact-item"><span>📧</span><span>t.bikbaev@gmail.com</span></div>
+        <div class="contact-item"><span>📞</span><span>+421944136228</span></div>
+        <div class="contact-item"><span>✈️</span><span>@t_bikbaev</span></div>
+        <div class="contact-item"><span>📍</span><span>Bratislava, Slovakia</span></div>
+      </div>
+    </header>
 
-			<div id="telemetry">
-				<h3>Telemetry</h3>
-				<ul>
-					<li>prometheus</li>
-					<li>grafana, ELK</li>
-					<li>cloudwatch + serverless</li>
-					<li>new relic</li>
-				</ul>
-			</div>
-			<div id="db">
-				<h3>DB related</h3>
-				<ul>
-					<li>postgres, mysql, mssql</li>
-					<li>elasticsearch, mongodb</li>
-					<li>clickhouse</li>
-					<li>oracle BI</li>
-				</ul>
-			</div>
-		</div>
-		<div id="summary">
-			<h2>Summary</h2>
-			<ul>
-				<li>AI platform and LLMOps engineer with 15+ years in infrastructure: I build and run production AI systems — LLM inference, RAG pipelines, agent runtimes, evaluation and observability — on cloud and self-hosted GPU infrastructure.</li>
-				<li>Founder of DevOps.AI s.r.o. (Bratislava) — AI platform engineering and LLMOps consulting.</li>
-				<li>Ran always-on personal AI agents (OpenClaw, Hermes) in production for years: multi-channel (Telegram, SMS, voice/IVR with Asterisk), local LLMs, scheduled reasoning, multi-source synthesis, and a multi-bank memory system.</li>
-				<li>Hands-on LLM infrastructure: self-hosted vLLM/llama.cpp inference endpoints, quantization, benchmarking (GSM8K-class evals), A/B testing of retrieval and reranking strategies, cost/latency optimization.</li>
-				<li>15+ years administering Linux/Windows environments; high-load infrastructure, VoIP (Asterisk/Cisco), BI/DWH (Oracle, MS SQL) background.</li>
-				<li>Strong CI/CD practitioner: GitLab CI, GitHub Actions, Jenkins, Azure DevOps; infrastructure as code with Terraform/Terragrunt/Pulumi across AWS, Azure, GCP and on-prem.</li>
-				<li>Comfortable as sole engineer owning a system end-to-end, or as part of a team.</li>
-			</ul>
-		</div>
-		<div id="experience">
-			<h2>Work Experience</h2>
-			<h3>2024 – present</h3>
-			<h3>Founder &amp; AI Platform Engineer, DevOps.AI s.r.o.</h3>
-			<p>Bratislava, Slovakia · AI platform engineering &amp; LLMOps</p>
-			<p>Participation:</p>
-			<ul>
-				<li>Founded DevOps.AI s.r.o. — LLMOps and AI platform engineering consulting</li>
-				<li>LLM serving infrastructure (vLLM, llama.cpp) on self-hosted GPU rigs</li>
-				<li>RAG pipelines: ingestion, embeddings, vector search, reranking, evaluation</li>
-				<li>Production AI agents (OpenClaw, Hermes): Telegram, SMS, voice IVR (Asterisk + LLM + TTS/STT), scheduled reasoning</li>
-				<li>DevOps consulting for enterprise client (insurance sector, under NDA): AWS, Kubernetes, GitLab CI, Jenkins</li>
-			</ul>
-			<p><strong>Environment:</strong> Python, vLLM, llama.cpp, Qdrant, Asterisk, AWS, Kubernetes, GitLab CI</p>
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>AI / LLMOps</h3>
+          <ul>
+            <li>LLM serving: vLLM, llama.cpp, SGLang, Ollama</li>
+            <li>RAG: embeddings, vector DBs (Qdrant, pgvector), reranking, evaluation</li>
+            <li>AI agents: tool-calling runtimes, multi-agent orchestration</li>
+            <li>Model quality: evals (GSM8K-style benchmarks), observability, cost control</li>
+            <li>GPU infrastructure: scheduling, inference optimization, quantization</li>
+            <li>Production agents:
+              <ul>
+                <li>OpenClaw — always-on AI agent (Telegram, SMS, voice/IVR, local LLM, hardware)</li>
+                <li>Hermes — multi-platform AI agent (scheduled reasoning, multi-source synthesis)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-			<h3>Oct-2019 – Apr-2024</h3>
-			<h3>DevOps Engineer, Globallogic</h3>
-			<p>Project: application for microscope</p>
-			<p>Role: DevOps engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS (infrastructure from scratch)</li>
-				<li>Azure, GCP (infrastructure from scratch)</li>
-				<li>Infrastructure as code: Terraform + Terragrunt across AWS, Azure, GCP and on-prem</li>
-				<li>Kubernetes, helm, microservices development and deployment</li>
-				<li>BigData: Athena + Apache Airflow</li>
-				<li>CI/CD (Azure DevOps)</li>
-				<li>Monitoring</li>
-			</ul>
-			<p><strong>Environment:</strong> AWS, Azure, GCP, Terraform/Terragrunt, Kubernetes, Helm, Airflow</p>
+        <div class="skill-category">
+          <h3>Clouds</h3>
+          <ul>
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>Azure</li>
+            <li>On-prem GPU rigs</li>
+          </ul>
+        </div>
 
-			<h3>Dec-2017 – Oct-2019</h3>
-			<h3>DevOps Engineer, Slate</h3>
-			<p>Project: Mobile app for gas stations</p>
-			<p>Role: DevOps Engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS, GCP</li>
-				<li>Kubernetes, container orchestration (Rancher)</li>
-				<li>CI/CD (GitLab CI)</li>
-				<li>Processes automation</li>
-				<li>Monitoring</li>
-			</ul>
-			<p><strong>Environment:</strong> AWS, Rancher, JS, Mongo, Postgres, Keycloak</p>
+        <div class="skill-category">
+          <h3>IaaC / Containers</h3>
+          <ul>
+            <li>Kubernetes, Helm, Istio</li>
+            <li>Terraform, Terragrunt, Pulumi</li>
+            <li>Docker, Rancher</li>
+            <li>CloudFormation, ARM</li>
+          </ul>
+        </div>
 
-			<h3>Dec-2016 – Dec-2017</h3>
-			<h3>DevOps Engineer, Ciklum</h3>
-			<p>Project: Mobile social network</p>
-			<p>Role: DevOps Engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>AWS, GCP</li>
-				<li>Kubernetes</li>
-				<li>CI/CD (GitHub + Jenkins)</li>
-				<li>Processes automation</li>
-				<li>Monitoring</li>
-			</ul>
-			<p><strong>Environment:</strong> AWS, Nginx, PHP, MySQL</p>
+        <div class="skill-category">
+          <h3>CI/CD</h3>
+          <ul>
+            <li>GitLab CI, GitHub Actions</li>
+            <li>Jenkins, Azure DevOps</li>
+            <li>CircleCI, Concourse, Drone.io</li>
+          </ul>
+        </div>
 
-			<h3>Dec-2015 – Dec-2016</h3>
-			<h3>DevOps Engineer, EPAM</h3>
-			<p>Project: Part of INFRA team</p>
-			<p>Role: DevOps Engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>Deployments</li>
-				<li>Processes automation</li>
-				<li>New software implementation</li>
-				<li>Monitoring</li>
-			</ul>
-			<p><strong>Environment:</strong> JavaEE, WebLogic, Tomcat, RHEL</p>
+        <div class="skill-category">
+          <h3>Scripting</h3>
+          <ul>
+            <li>Python</li>
+            <li>Rust</li>
+            <li>Bash, PowerShell</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
 
-			<h3>Aug-2011 – Dec-2015</h3>
-			<h3>DevOps Engineer/L3 Tech Support/Developer, JSC Platinum Bank</h3>
-			<p>Project: Development and implementation of network, VoIP, DWH, BI, CRM infrastructure</p>
-			<p>Role: DevOps Engineer</p>
-			<p>Participation:</p>
-			<ul>
-				<li>Technical audit and consultancy on system health monitoring and application performance</li>
-				<li>Backup and restore process analysis and improvement</li>
-				<li>Support of network, VoIP, DWH, BI, CRM infrastructure</li>
-				<li>New telephony services development for operation department</li>
-				<li>Maintenance of DWH/BI infrastructure, development of new BI objects</li>
-			</ul>
-			<p><strong>Environment:</strong> Asterisk, Cisco equipment, Oracle BI, Oracle Siebel, Microsoft SSRS/SSIS/SSAS/DB, LAMP, Cisco UCM/CME</p>
-		</div>
-		<div id="education">
-			<h2>Education</h2>
-			<h3>2000-2006 NTUU "KPI"</h3>
-			<h3>IT faculty, diploma : "system analyst"</h3>
-		</div>
+        <div class="skill-category">
+          <h3>Telemetry</h3>
+          <ul>
+            <li>Prometheus, Grafana</li>
+            <li>ELK</li>
+            <li>CloudWatch + serverless</li>
+            <li>New Relic</li>
+          </ul>
+        </div>
 
-    </header><!-- /header -->
-  </body>
+        <div class="skill-category">
+          <h3>DB Related</h3>
+          <ul>
+            <li>Postgres, MySQL, MSSQL</li>
+            <li>Elasticsearch, MongoDB</li>
+            <li>ClickHouse</li>
+            <li>Oracle BI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="summary">
+      <h2 class="section-title">Summary</h2>
+      <ul class="summary-list">
+        <li>AI platform and LLMOps engineer with 15+ years in infrastructure: I build and run production AI systems — LLM inference, RAG pipelines, agent runtimes, evaluation and observability — on cloud and self-hosted GPU infrastructure.</li>
+        <li>Founder of DevOps.AI s.r.o. (Bratislava) — AI platform engineering and LLMOps consulting.</li>
+        <li>Ran always-on personal AI agents (OpenClaw, Hermes) in production for years: multi-channel (Telegram, SMS, voice/IVR with Asterisk), local LLMs, scheduled reasoning, multi-source synthesis, and a multi-bank memory system.</li>
+        <li>Hands-on LLM infrastructure: self-hosted vLLM/llama.cpp inference endpoints, quantization, benchmarking (GSM8K-class evals), A/B testing of retrieval and reranking strategies, cost/latency optimization.</li>
+        <li>15+ years administering Linux/Windows environments; high-load infrastructure, VoIP (Asterisk/Cisco), BI/DWH (Oracle, MS SQL) background.</li>
+        <li>Strong CI/CD practitioner: GitLab CI, GitHub Actions, Jenkins, Azure DevOps; infrastructure as code with Terraform/Terragrunt/Pulumi across AWS, Azure, GCP and on-prem.</li>
+        <li>Comfortable as sole engineer owning a system end-to-end, or as part of a team.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-item">
+        <h3>2024 – present</h3>
+        <h4>Founder &amp; AI Platform Engineer, DevOps.AI s.r.o.</h4>
+        <p>Bratislava, Slovakia · AI platform engineering &amp; LLMOps</p>
+        <ul>
+          <li>Founded DevOps.AI s.r.o. — LLMOps and AI platform engineering consulting</li>
+          <li>LLM serving infrastructure (vLLM, llama.cpp) on self-hosted GPU rigs</li>
+          <li>RAG pipelines: ingestion, embeddings, vector search, reranking, evaluation</li>
+          <li>Production AI agents (OpenClaw, Hermes): Telegram, SMS, voice IVR (Asterisk + LLM + TTS/STT), scheduled reasoning</li>
+          <li>DevOps consulting for enterprise client (insurance sector, under NDA): AWS, Kubernetes, GitLab CI, Jenkins</li>
+        </ul>
+        <p><strong>Environment:</strong> Python, vLLM, llama.cpp, Qdrant, Asterisk, AWS, Kubernetes, GitLab CI</p>
+      </div>
+      <div class="experience-item">
+        <h3>Oct-2019 – Apr-2024</h3>
+        <h4>DevOps Engineer, Globallogic</h4>
+        <p>Project: application for microscope</p>
+        <ul>
+          <li>AWS, Azure, GCP (infrastructure from scratch on all three)</li>
+          <li>Infrastructure as code: Terraform + Terragrunt across AWS, Azure, GCP and on-prem</li>
+          <li>Kubernetes, Helm, microservices development and deployment</li>
+          <li>BigData: Athena + Apache Airflow</li>
+          <li>CI/CD (Azure DevOps)</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> AWS, Azure, GCP, Terraform/Terragrunt, Kubernetes, Helm, Airflow</p>
+      </div>
+      <div class="experience-item">
+        <h3>Dec-2017 – Oct-2019</h3>
+        <h4>DevOps Engineer, Slate</h4>
+        <p>Project: Mobile app for gas stations</p>
+        <ul>
+          <li>AWS, GCP</li>
+          <li>Kubernetes, container orchestration (Rancher)</li>
+          <li>CI/CD (GitLab CI)</li>
+          <li>Processes automation</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> AWS, Rancher, JS, Mongo, Postgres, Keycloak</p>
+      </div>
+      <div class="experience-item">
+        <h3>Dec-2016 – Dec-2017</h3>
+        <h4>DevOps Engineer, Ciklum</h4>
+        <p>Project: Mobile social network</p>
+        <ul>
+          <li>AWS, GCP</li>
+          <li>Kubernetes</li>
+          <li>CI/CD (GitHub + Jenkins)</li>
+          <li>Processes automation</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> AWS, Nginx, PHP, MySQL</p>
+      </div>
+      <div class="experience-item">
+        <h3>Dec-2015 – Dec-2016</h3>
+        <h4>DevOps Engineer, EPAM</h4>
+        <p>Project: Part of INFRA team</p>
+        <ul>
+          <li>Deployments</li>
+          <li>Processes automation</li>
+          <li>New software implementation</li>
+          <li>Monitoring</li>
+        </ul>
+        <p><strong>Environment:</strong> JavaEE, WebLogic, Tomcat, RHEL</p>
+      </div>
+      <div class="experience-item">
+        <h3>Aug-2011 – Dec-2015</h3>
+        <h4>DevOps Engineer / L3 Tech Support / Developer, JSC Platinum Bank</h4>
+        <p>Project: Development and implementation of network, VoIP, DWH, BI, CRM infrastructure</p>
+        <ul>
+          <li>Technical audit and consultancy on system health monitoring and application performance</li>
+          <li>Backup and restore process analysis and improvement</li>
+          <li>Support of network, VoIP, DWH, BI, CRM infrastructure</li>
+          <li>New telephony services development for operation department</li>
+          <li>Maintenance of DWH/BI infrastructure, development of new BI objects</li>
+        </ul>
+        <p><strong>Environment:</strong> Asterisk, Cisco equipment, Oracle BI, Oracle Siebel, Microsoft SSRS/SSIS/SSAS/DB, LAMP, Cisco UCM/CME</p>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>2000-2006 NTUU "KPI"</h3>
+        <p>IT Faculty, Diploma: "System Analyst"</p>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
